@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Button
 import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -92,6 +93,10 @@ fun BodyContent(dog: Dog) {
             Spacer(modifier = Modifier.height(16.dp))
             Text("DESCRIPTION:", fontWeight = FontWeight.Medium)
             Text(dog.description, style = typography.subtitle2, fontWeight = FontWeight.Light)
+            Spacer(modifier = Modifier.weight(1F))
+            Button(onClick = { /* TODO */ }, modifier = Modifier.fillMaxWidth().padding(bottom = 40.dp)) {
+                Text("ADOPT")
+            }
         }
     }
 }
